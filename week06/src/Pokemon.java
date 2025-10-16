@@ -1,6 +1,6 @@
 public abstract class Pokemon {
-//    private String name;
-    protected String name;
+    private String name;
+//    protected String name;
     private int hp;
 
     public Pokemon(String name, int hp){
