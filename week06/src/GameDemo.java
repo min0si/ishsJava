@@ -1,7 +1,7 @@
 public class GameDemo {
     public static void main(String[] args) {
         Pikachu p1 = new Pikachu(100, 27);
-        Pikachu p2 = new Pikachu(100, 28);
+        //Pikachu p2 = new Pikachu(100, 28);
         Squirtle s1 = new Squirtle(120, 21);
 
         System.out.println("배틀 시작!");
