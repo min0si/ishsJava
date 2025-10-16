@@ -13,9 +13,17 @@ public abstract class Pokemon {
     public String getName(){
         return name;
     }
-    public int getHP(){
+    public int getHp(){
         return hp;
     }
+    public int getAttackPower() {
+        return attackPower;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
     public abstract void attack(Pokemon target);
 
     @Override
