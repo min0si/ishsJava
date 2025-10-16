@@ -25,6 +25,14 @@ public abstract class Pokemon {
     }
 
     public abstract void attack(Pokemon target);
+    public void receiveDamage(int damage){
+        hp = hp - damage;
+        if(hp < 0) hp = 0;
+    }
+
+    public boolean isFainted(){
+        return hp <= 0;
+    }
 
     @Override
     public String toString() {
