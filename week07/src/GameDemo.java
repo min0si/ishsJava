@@ -2,17 +2,17 @@ public class GameDemo {
     public static void main(String[] args) {
         Jetpack jetpack = new Jetpack() ;
 
-
-        Pikachu p1 = new Pikachu(100, 27);
-        p1.setFlyingTool(new Nofly());
+        Pikachu p1 = new Pikachu(100, 27, new Nofly());
+        //p1.setFlyingTool(new Nofly());
         p1.performFlyable();
         p1.setFlyingTool(jetpack) ;  //젯팩 추진기 득템
         p1.performFlyable();
 
+
         //Pikachu p2 = new Pikachu(100, 28);
         //Squirtle s1 = new Squirtle(120, 21);
-        Rizamong r1= new Rizamong(200,40);
-        r1.setFlyingTool(new Wings());
+        Rizamong r1= new Rizamong(200,40, new Wings());
+        //r1.setFlyingTool(new Wings());
         r1.performFlyable();
 
         System.out.println("배틀 시작!");
