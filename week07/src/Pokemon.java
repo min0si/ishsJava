@@ -32,7 +32,7 @@ public abstract class Pokemon {
     }
 
     public void performFlyable() {
-        this.flyingTool.fly();
+        this.flyingTool.fly(this); //실행시점의 객체를 매개변수로 전달
     }
 
     public abstract void attack(Pokemon target);
